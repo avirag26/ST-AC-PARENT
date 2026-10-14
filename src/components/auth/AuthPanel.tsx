@@ -4,8 +4,8 @@ import { LoginForm } from "@/components/auth/LoginForm";
 
 const highlights = [
   "See your child’s classes and attendance",
-  "Check exam marks and quizzes",
-  "Track fees and learning resources",
+  "Review upcoming and completed lessons",
+  "Keep every child's schedule in one place",
 ];
 
 export function AuthPanel() {

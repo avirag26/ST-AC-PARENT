@@ -117,9 +117,7 @@ export function LoginForm() {
         error={errors.password}
       />
 
-      <p className="text-sm text-text-secondary">
-        Forgot password? Email reset comes in a later step.
-      </p>
+      <a href="/forgot-password" className="inline-flex min-h-11 items-center text-sm font-medium text-primary">Forgot password?</a>
 
       <div className="mt-auto pt-2">
         <Button type="submit" fullWidth isLoading={isSubmitting}>

@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { MobileNavigation } from "@/components/MobileNavigation";
 
 export const metadata: Metadata = {
   title: "Parent | Straight Line Academy",
@@ -25,9 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-dvh bg-background text-foreground antialiased`}
+        className="min-h-dvh bg-background text-foreground antialiased"
       >
         {children}
+        <MobileNavigation />
       </body>
     </html>
   );
